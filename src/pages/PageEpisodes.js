@@ -16,7 +16,7 @@ const PageEpisodes = (props) => {
             <div className="l_PodcastCard">
               {
                 props.episodes.map(i => (
-                  <Link to={`${props.match.url}/${i.id}`}>
+                  <Link className="no-hover" to={`${props.match.url}/${i.id}`}>
                     <PodcastCard
                       title={i.title}
                       id={i.id}

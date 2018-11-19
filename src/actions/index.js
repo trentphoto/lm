@@ -3,7 +3,7 @@ import axios from 'axios'
 export const GET_EPISODES = 'GET_EPISODES'
 
 export const getEpisodes = () => async dispatch => {
-  const res = await axios.get('http://brightsaltmedialabs.com/buildingoneanotheradmin/wp-json/wp/v2/episode?per_page=99&_embed')
+  const res = await axios.get('https://brightsaltmedialabs.com/buildingoneanotheradmin/wp-json/wp/v2/episode?per_page=99&_embed')
   // generate an object with only the data that we need
   const a = res.data.map(i => ({
     title: i.acf.title,

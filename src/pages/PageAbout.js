@@ -12,11 +12,11 @@ const PageAbout = (props) => {
               <h2 className="mb-5">About Building One Another</h2>
             </div>
             <div className="col-md-2">
-              <img src="http://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/Stan-Ott.jpg" alt="Stan Ott" className="img-fluid" />
+              <img src="https://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/Stan-Ott.jpg" alt="Stan Ott" className="img-fluid" />
               <p>Stan Ott</p>
             </div>
             <div className="col-md-2">
-              <img src="http://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/Lee-Zehmer.jpg" alt="Lee Zehmer" className="img-fluid" />
+              <img src="https://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/Lee-Zehmer.jpg" alt="Lee Zehmer" className="img-fluid" />
               <p>Lee Zehmer</p>
             </div>
           </div>

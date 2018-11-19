@@ -12,7 +12,7 @@ export const getEpisodes = () => async dispatch => {
     letter: i.acf.letter,
     url: i.acf.url,
     excerpt: i.acf.excerpt,
-    image: i._embedded ? 'http://brightsaltmedialabs.com' + i._embedded['wp:featuredmedia'][0].source_url : null,
+    image: i._embedded ? 'https://brightsaltmedialabs.com' + i._embedded['wp:featuredmedia'][0].source_url : null,
   }))
   dispatch({
     type: GET_EPISODES,

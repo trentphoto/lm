@@ -14,7 +14,7 @@ const CtaSection = props => (
         </div>
         <div className="col-md-5 offset-md-2">
           <div className="heart-cover-styled">
-            <img alt="" src="http://brightsaltmedia.com/wp-content/uploads/2018/08/cover.jpg" className="heart-cover-styled__img img-fluid" />
+            <img alt="" src="https://brightsaltmedia.com/wp-content/uploads/2018/08/cover.jpg" className="heart-cover-styled__img img-fluid" />
           </div>
         </div>
       </div>

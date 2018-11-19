@@ -48,7 +48,7 @@ class myModal extends Component {
               </form>
             </div>
             <div className="col-sm-6">
-              <img src="http://brightsaltmedia.com/wp-content/uploads/2018/08/cover.jpg" className="img-fluid d-none d-sm-block" alt="Grow a Heart to Impart" />
+              <img src="https://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/cover.jpg" className="img-fluid d-none d-sm-block" alt="Grow a Heart to Impart" />
             </div>
           </div>
         </Modal>

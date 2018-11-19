@@ -34,7 +34,7 @@ const Footer = () => (
               </div>
             </div>
             <div className="col-md-4">
-              <img src="http://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/logo-white.png" alt="Leading Moments" className="mb-3 Footer__logo" />
+              <img src="https://brightsaltmedialabs.com/buildingoneanotheradmin/wp-content/uploads/2018/11/logo-white.png" alt="Leading Moments" className="mb-3 Footer__logo" />
               <p>Building One Another is a podcast of Leading Moments.</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            &copy; 2018 Leading Moments LLC. Web design by <a className="text-white" href="http://brightsaltmedia.com"><u>Bright Salt Media Labs</u></a>.
+            &copy; 2018 Leading Moments LLC. Web design by <a className="text-white" href="https://brightsaltmedia.com"><u>Bright Salt Media Labs</u></a>.
           </div>
         </div>
       </div>

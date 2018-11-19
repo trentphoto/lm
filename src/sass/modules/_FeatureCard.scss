@@ -1,0 +1,26 @@
+.FeatureCard {
+  @extend .card;
+  color: $body-color;
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 100%;
+  @include hover-focus {
+    text-decoration: none;
+    color: $body-color;
+  };
+  @include shadow-hover;
+  &__subtitle {
+    @include smallcaps;
+    font-size: .6rem;
+  }
+  &__image-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &__image {
+    object-fit: contain;
+    max-height: 400px
+  }
+}

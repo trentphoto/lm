@@ -1,0 +1,34 @@
+@import "bootstrap/bootstrap.scss";
+
+@import "~antd/dist/antd.css";
+
+// base styles ------------
+@import "base/variables";
+
+// layout styles ------------
+
+// module styles ------------
+
+// header modules
+@import "modules/header/BoaHeader";
+@import "modules/logo";
+
+// footer modules
+@import "modules/Footer";
+
+// large components used frequently
+@import "modules/main";
+@import "modules/subnav";
+@import "modules/section";
+
+@import "modules/content_single";
+
+// smaller, nested componenets
+@import "modules/FeatureCard";
+@import "modules/PodcastCard";
+@import "modules/info-card";
+
+@import "modules/modal-heart";
+@import "modules/heart-cover-styled";
+
+// view styles ------------

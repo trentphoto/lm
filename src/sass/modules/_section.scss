@@ -1,0 +1,13 @@
+.section {
+  padding: 3rem;
+  &_light {
+    background-color: $lm_primary_3;
+  }
+  &_white {
+    background-color: white;
+  }
+  &_blue {
+    background: $gradient-blue;
+    color: white;
+  }
+}

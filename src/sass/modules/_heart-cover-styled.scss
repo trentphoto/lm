@@ -1,0 +1,8 @@
+.heart-cover-styled {
+  perspective: 1000px;
+  &__img {
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    transform: rotateY(-10deg)translateY(-20px);
+    transition: 500ms ease all;
+  }
+}

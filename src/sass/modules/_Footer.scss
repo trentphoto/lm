@@ -1,0 +1,14 @@
+.Footer {
+  text-align: center;
+  padding: 5rem 3rem;
+  background-image: $gradient-blue;
+  &__logo {
+    max-width: 200px;
+  }
+  h3, li a, p {
+    color: white;
+  }
+  li a.active {
+    font-weight: bold;
+  }
+}

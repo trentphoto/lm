@@ -26,7 +26,7 @@ const PageHome = props => {
               <Link to="/episodes"><Btn color="primary" text="Get Devotionals" /></Link>
             </div>
             <div className="col-md-6">
-              <Link to={`episodes/${latest.id}`}>
+              <Link className="no-hover" to={`episodes/${latest.id}`}>
                 <FeatureCard
                   title={latest.title}
                   subtitle="Latest Episode"
@@ -76,7 +76,14 @@ const PageHome = props => {
               <div className="l_PodcastCard">
                 {
                   latest3.map(i => (
-                    <PodcastCard title={i.title} id={i.id} image={i.image} />
+                    <Link className="no-hover" to={`/episodes/${i.id}`}>
+                      <PodcastCard
+                        title={i.title}
+                        id={i.id}
+                        excerpt={i.excerpt}
+                        image={i.image}
+                        />
+                    </Link>
                   ))
                 }
               </div>

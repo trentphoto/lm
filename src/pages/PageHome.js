@@ -76,7 +76,7 @@ const PageHome = props => {
               <div className="l_PodcastCard">
                 {
                   latest3.map(i => (
-                    <Link className="no-hover" to={`/episodes/${i.id}`}>
+                    <Link className="no-hover" to={`/episodes/${i.id}`} key={i.id}>
                       <PodcastCard
                         title={i.title}
                         id={i.id}

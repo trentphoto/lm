@@ -4,11 +4,13 @@ const FeatureCard = props => (
 
   <div className="FeatureCard">
     <div className="row no-gutters">
-      <div className="col FeatureCard__image-wrap">
-        {
-          props.image && <img className="FeatureCard__image" src={props.image} alt={props.title} />
-        }
-      </div>
+      {
+        props.image && (
+          <div className="col FeatureCard__image-wrap">
+            <img className="FeatureCard__image" src={props.image} alt={props.title} />
+          </div>
+        )
+      }
       <div className="col">
         <div className="card-body">
           <p className="FeatureCard__subtitle">{props.subtitle}</p>

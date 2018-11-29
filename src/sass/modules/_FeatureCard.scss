@@ -7,6 +7,10 @@
   @include hover-focus {
     text-decoration: none;
     color: $body-color;
+    .FeatureCard__btn:hover {
+      background-color: $lm_primary_1;
+      border-color: $lm_primary_1;
+    }
   };
   @include shadow-hover;
   &__subtitle {

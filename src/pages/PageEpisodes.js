@@ -4,18 +4,10 @@ import { connect } from 'react-redux'
 import PageWrapper from '../components/layout/PageWrapper'
 import EpisodeSingle from './EpisodeSingle'
 import PodcastCard from '../components/PodcastCard'
-import { TweenMax, Elastic } from 'gsap'
-import $ from 'jquery'
 
 class PageEpisodes extends React.Component {
 
   componentDidMount() {
-    console.log(25);
-    TweenMax.fromTo(
-      $('.containerEpisodes'), .7,
-      { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
-      { transform: 'translateY(0px)', opacity: 1, ease: Elastic.easeOut.config(0.25, 1)},
-    )
   }
 
   render() {

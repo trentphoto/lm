@@ -6,14 +6,6 @@ import $ from 'jquery'
 
 class PageListen extends React.Component{
 
-  componentDidMount() {
-    TweenMax.fromTo(
-      $('.containerListen'), .7,
-      { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
-      { transform: 'translateY(0px)', opacity: 1, ease: Elastic.easeOut.config(0.25, 1)},
-    )
-  }
-
   render() {
     return (
      <PageWrapper>

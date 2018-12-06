@@ -1,6 +1,7 @@
 @import "bootstrap/bootstrap.scss";
 
-@import "~antd/dist/antd.css";
+// @import "~antd/dist/antd.css";
+// ant design breaks react-transition-group
 
 // base styles ------------
 @import "base/variables";

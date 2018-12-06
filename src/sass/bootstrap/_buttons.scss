@@ -13,7 +13,7 @@
   user-select: none;
   border: $btn-border-width solid transparent;
   @include smallcaps;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-sm, $btn-line-height, $btn-border-radius);
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
   // Share hover and focus styles
@@ -59,6 +59,7 @@
     color: $primary;
     transition: $jpl-transition;
     display: block;
+    font-weight: 700;
     z-index: 2
   }
   &__hover-text {
@@ -67,6 +68,7 @@
     display: block;
     transform: translateY(10px);
     transition: $jpl-transition;
+    font-weight: 700;
     z-index: 3;
   }
   &__bg {

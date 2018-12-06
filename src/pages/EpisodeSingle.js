@@ -9,15 +9,15 @@ import $ from 'jquery'
 class EpisodeSingle extends React.Component {
 
   componentDidMount() {
-    TweenMax.fromTo(
-      $('.contentLeft'), 1,
-      { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
-      { transform: 'translateY(0px)', opacity: 1, ease: Elastic.easeOut.config(0.25, 1)},
-    )
+    // TweenMax.fromTo(
+    //   $('.contentLeft'), 1,
+    //   { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
+    //   { transform: 'translateY(0px)', opacity: 1, ease: Elastic.easeOut.config(0.25, 1)},
+    // )
     TweenMax.fromTo(
       $('.sidebarRight'), 1,
       { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
-      { transform: 'translateY(0px)', opacity: 1, delay: .2, ease: Elastic.easeOut.config(0.25, 1)},
+      { transform: 'translateY(0px)', opacity: 1, delay: .5, ease: Elastic.easeOut.config(0.25, 1)},
     )
   }
 

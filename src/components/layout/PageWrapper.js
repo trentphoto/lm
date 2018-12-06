@@ -1,18 +1,17 @@
 import React from 'react'
-import BoaHeader from './BoaHeader'
-import Subnav from './Subnav'
 import Footer from './Footer'
+import classnames from 'classnames'
 
 const PageWrapper = props => {
   return (
-    <React.Fragment>
-      <BoaHeader />
-      <Subnav />
+    <div className={classnames('page', {
+      'section_light': props.bg === 'light'
+    })}>
       {
         props.children
       }
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

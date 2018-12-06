@@ -25,7 +25,7 @@ class App extends React.Component {
             <FetchData />
             <Switch>
               <Route exact path="/" component={PageHome} />
-              <Route path="/about" component={PageAbout} />
+              <Route path="/about" render={({ match }) => <PageAbout />} />
               <Route path="/episodes" component={PageEpisodes} />
               <Route path="/heart" component={PageHeart} />
               <Route path="/listen" component={PageListen} />

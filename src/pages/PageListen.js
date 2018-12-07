@@ -1,8 +1,6 @@
 import React from 'react';
 import PageWrapper from '../components/layout/PageWrapper'
 import Btn from '../components/Btn'
-import { TweenMax, Elastic } from 'gsap'
-import $ from 'jquery'
 
 class PageListen extends React.Component{
 

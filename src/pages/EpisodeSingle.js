@@ -34,7 +34,7 @@ class EpisodeSingle extends React.Component {
             <div className="col-md-8 contentLeft">
               <h1>{item.title}</h1>
               {
-                item.image && <img className="img-fluid" alt={item.title} src={item.image} />
+                item.image && <img className="img-fluid mb-3" alt={item.title} src={item.image} />
               }
               {
                 item.url && <audio className="my-5" controls src={item.url}></audio>

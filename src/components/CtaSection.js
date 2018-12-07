@@ -8,8 +8,8 @@ const CtaSection = props => (
       <div className="row">
         <div className="col-md-5">
           <h2>Grow a heart to impart</h2>
-          <p>Get the e-devotional delivered to your Inbox and receive a free PDF download, “A Heart to Impart: Become an Encourager"</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, saepe.</p>
+          <p>Get the e-devotional delivered to your inbox and receive a free PDF download, <strong><i>A Heart to Impart: Become an Encourager.</i></strong></p>
+          <p>You'll get a weekly e-devotional with a link to that week's podcast.</p>
           <Modal />
         </div>
         <div className="col-md-5 offset-md-2">

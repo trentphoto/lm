@@ -1,0 +1,18 @@
+.GiveBtn {
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: .2s ease background-color;
+  @include hover {
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    text-decoration: none;
+  };
+  .fa-gift {
+    margin-right: .5rem;
+  }
+}

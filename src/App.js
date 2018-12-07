@@ -15,8 +15,8 @@ import PageHeart from './pages/PageHeart'
 import PageListen from './pages/PageListen'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
-library.add( faPlay )
+import { faPlay, faBookOpen, faGift } from '@fortawesome/free-solid-svg-icons'
+library.add( faPlay, faBookOpen, faGift )
 
 class App extends React.Component {
   render() {

@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { TweenMax, Elastic } from 'gsap'
-import $ from 'jquery'
 import PageWrapper from '../components/layout/PageWrapper'
 import FeatureCard from '../components/FeatureCard'
 import InfoCard from '../components/InfoCard'
@@ -11,18 +9,10 @@ import CtaSection from '../components/CtaSection'
 import Btn from '../components/Btn'
 
 class PageHome extends React.Component {
-  componentDidMount() {
-    // TweenMax.fromTo(
-    //   $('.home_wrapper'), .7,
-    //   { transform: 'translateY(20px)', opacity: 0, ease: Elastic.easeOut.config(0.25, 1)},
-    //   { transform: 'translateY(0px)', opacity: 1, ease: Elastic.easeOut.config(0.25, 1)}
-    // )
-  }
-
   render() {
     if (!this.props.episodes.length) return null;
     const latest = this.props.episodes[0]
-    const latest3 = this.props.episodes.filter((i, ind) => ind < 3)
+    const latest3 = this.props.episodes.filter((i, ind) => (ind < 4 && ind > 0))
 
     return (
       <PageWrapper bg="light">
@@ -73,7 +63,7 @@ class PageHome extends React.Component {
                       <p className="text-center w-100 text-success"><i className="fas fa-leaf fa-2x"></i></p>
                       <p className="font-weight-bold">For individual and small group study</p>
                       <p>Building One Another is both a podcast and an e-devotional. Both of them are designed for your personal use and for use in small group and leadership teams.</p>
-                      <p>You may access the podcasts here or on your favorite podcast platform. You may have the e-devotionals sent to your inbox or read them here.</p>
+                      <p>You may access the podcasts here or on your favorite podcast platform. You may also have the e-devotionals sent to your inbox or read them here. Sign up for the weekly e-devotional below.</p>
                     </InfoCard>
                   </div>
                 </div>
@@ -84,25 +74,47 @@ class PageHome extends React.Component {
 
             <section className="section section_blue">
               <div className="container">
-                <div className="row">
-                  <div className="col">
-                    <h2 className="text-center mb-5 text-white">Latest Episodes</h2>
-                    <div className="l_PodcastCard">
+                <div className="row align-items-center">
+                  <div className="col-sm-6 text-right mb-3">
+                    <p>Latest Episode</p>
+                    <h2 className="display-4">{latest.title}</h2>
+                    <p dangerouslySetInnerHTML={{__html: latest.letter.substring(0, 200) + '...'}} />
+                    <Link to={`/episodes/${latest.id}`}><Btn text="Listen Now" classes="btn-light" /></Link>
+                  </div>
+                  <div className="col-sm-6">
+                    <img className="img-fluid" src={latest.image} alt={latest.title} />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="section section_light">
+              <div className="container">
+                <div className="container">
+                  <div className="row">
+                    <div className="col">
+                      <h2 className="text-center mb-5">More Episodes</h2>
+                    </div>
+                  </div>
+                  <div className="row">
                       {
                         latest3.map(i => (
-                          <Link className="no-hover" to={`/episodes/${i.id}`} key={i.id}>
-                            <PodcastCard
-                              title={i.title}
-                              id={i.id}
-                              excerpt={i.excerpt}
-                              image={i.image}
-                              />
-                          </Link>
+                          <div className="col-lg-4 col-md-6">
+                            <Link className="no-hover" to={`/episodes/${i.id}`} key={i.id}>
+                              <PodcastCard
+                                title={i.title}
+                                id={i.id}
+                                excerpt={i.excerpt}
+                                image={i.image}
+                                />
+                            </Link>
+                          </div>
                         ))
                       }
-                    </div>
-                    <div className="text-center">
-                      <Link to="/episodes"><Btn text="View More" classes="btn-light mt-5" /></Link>
+                  </div>
+                  <div className="row">
+                    <div className="col text-center">
+                      <Link to="/episodes"><Btn text="View All" /></Link>
                     </div>
                   </div>
                 </div>

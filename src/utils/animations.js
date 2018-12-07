@@ -1,4 +1,4 @@
-import { TweenMax, TimelineMax, Elastic, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap'
 // import { getTypeFromClassName } from './dom'
 import $ from 'jquery'
 
